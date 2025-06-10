@@ -24,7 +24,7 @@ The primary source of uncertainty in this problem is vaccine demand, which fluct
 Monte Carlo Scenario Generation
 A Monte Carlo simulation is used to generate a set of demand scenarios. These scenarios take into account fluctuations in demand due to factors like infection rate variations, public health interventions, and seasonal effects.
 The scenario generation process follows these steps:
-• Historical demand data is obtained from Robert Koch Institute (RKI) reports [15].
+• Historical demand data is obtained from Robert Koch Institute (RKI) reports.
 • Statisticaldistributions(Gaussian)isfittedtothehistoricaldatatoestimateprobable future demand patterns.
 • A large number of demand realizations are sampled using Monte Carlo methods.
 • Thesampleddemandscenariosareclusteredintoarepresentativesubsettoensure computational tractability while maintaining variability.
@@ -32,6 +32,6 @@ Each generated scenario is assigned a probability ps, ensuring that the optimiza
 
 # Demand Modeling Across Different Codes
 The demand modeling evolved across the three versions of the code:
-• Code 1: model without the implementation of the L­shaped algorithm and the de­ mand is based on hospitalization rates.
-• Code 2: model with implementation of the L­shaped algorithm and the demand is based on hospitalization rates.
-• Code 3: model with the implementation of the L­shaped algorithm and the demand is based on real vaccination rates.
+• Code 1: model without the implementation of the L­shaped algorithm and the de­mand is based on hospitalization rates.[SpecialeMOD.py]
+• Code 2: model with implementation of the L­shaped algorithm and the demand is based on hospitalization rates. [StarMOD.py]
+• Code 3: model with the implementation of the L­shaped algorithm and the demand is based on real vaccination rates.[StarFinale.py]
