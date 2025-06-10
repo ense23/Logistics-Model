@@ -6,7 +6,7 @@ import random
 from scipy.spatial.distance import pdist, squareform
 
 # ------------------------------- Data Loading -------------------------------
-berlin_hospitals = pd.read_csv("/Users/enitasela/Desktop/Finale/BerlinHospitals.csv")
+berlin_hospitals = pd.read_csv("path.csv")
 hospital_coords = berlin_hospitals[['Latitude', 'Longitude']].values  
 
 # Clustering hospitals into 14 supernodes (5 km proximity)
