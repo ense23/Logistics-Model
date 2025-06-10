@@ -5,7 +5,7 @@ import numpy as np
 import random
 
 # Load Berlin hospital data and cluster into 14 supernodes
-berlin_hospitals = pd.read_csv("/Users/enitasela/Desktop/Finale/BerlinHospitals.csv")
+berlin_hospitals = pd.read_csv("path.csv")
 
 # Define parameters for clustering hospitals into supernodes
 supernodes = {i: [] for i in range(1, 15)}  # Dictionary to store hospitals in each cluster
